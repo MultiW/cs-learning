@@ -11,7 +11,7 @@ demoed this to the parent and showed him the code, the first thing the parent sa
 how the code will handle the case when two players join the game at once, causing a thread safety issue. FAIR question. But I had no 
 idea what he even meant. I mumbled something about singletons and we moved on.
 
-## The issue
+## The Issue
 In the students' example above, when two players join simultaneously, both players may end up becoming a seeker. This happens when one 
 player checks the common variable and finds it to be false, and before he can set the variable to true, the second player 
 checks the variable and also finds it to be false. Thus, both players find that there is no seeker yet and both players become a seeker.   
